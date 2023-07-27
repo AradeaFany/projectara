@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PORTOFOLIO ARA</title>
+	<script defer src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<header>
+		<h1>Portofolio</h1>
+		<p>Aradea Fany Sopandi Futry</p>
+	
+		<nav>
+			<ul>
+				<li><a href="">Beranda</a></li>
+				<li><a href="">Tentang</a></li>
+				<li><a href="">Kontak</a></li>
+			</ul>
+		</nav>	
+	</header>
+
+	<main>
+		<section>
+			<article>
+				<h2>My Profile</h2>
+       			 <p>Hallooo!!!!</p>
+        		<p>Ini adalah cerita tentang Seorang wanita yang lahir pada 19 Februari 2003. Pekerja keras, Selalu ingin belajar hal baru, dan sangat menyukai suasana lingkungan yang membuatnya memiliki wawasan baru. iya Aradea Fany Sopandi Futry namanya</p>
+       
+       			 <figure class="slide_img">
+       			 	<img class="slide" src="galeri/A2.jpeg" alt="">
+        			<img class="slide" src="galeri/A3.jpeg" alt="">
+       				<img class="slide" src="galeri/A4.jpeg" alt="">
+       				      <script>
+
+        var myIndex = 0;
+        carousel();
+   
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+   
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); //Ubah gambar setiap 3 detik
+        }
+</script>
+         			 <figcaption><p class="right"><a href="#">Continue Reading &raquo;</a></p></figcaption>
+       			 </figure>
+			</article>
+			<article>
+        		<h2>Judul Artikel Kedua</h2>
+        		<p>Ini adalah paragraf pertama dari artikel kedua.</p>
+        		<p>Ini adalah paragraf kedua dari artikel kedua.</p>
+      		</article>
+		</section>
+		<aside>
+      		<h3>Sidebar</h3>
+      		<p>Ini adalah bagian samping atau tambahan dari web.</p>
+    	</aside>
+    	<div class="info">
+      		<h3>Sidebar</h3>
+      		<p>Ini adalah bagian samping atau tambahan dari web.</p>
+    	</aside>
+	</main>
+
+	<footer>
+    	<p>Hak Cipta © 2023 - Aradea Fany.</p>
+ 	</footer>
+
+</body>
+</html>
